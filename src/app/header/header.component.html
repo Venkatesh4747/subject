@@ -1,0 +1,8 @@
+<p>
+  Enter message:<input type="text" #message>
+  <button (click)="sendData(message)">click</button>
+</p>
+<app-footer [recives]="msg" (newEvent)="data($event)">
+
+</app-footer>
+<p>{{raw}}</p>
